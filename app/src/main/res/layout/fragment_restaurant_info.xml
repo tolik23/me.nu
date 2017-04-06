@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_name_rest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/iv_logo_rest"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_search"
+            android:textColor="#FFFFFF"
+            android:text="Меню"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RatingBar
+                android:id="@+id/rb_rest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_numb_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#999999"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_room_13dp1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_kitchen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_bld_13dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_kitchen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_clock"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"/>
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_phone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_class"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999999"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"></View>
+        <TextView
+            android:id="@+id/tv_info_rest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#878787"
+            android:layout_margin="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#3e5d01">
+            <TextView
+                android:id="@+id/tv_reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отзывы"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/btn_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_search"
+                android:text="Добавить отзыв"
+                android:textColor="#FFFFFF"
+                android:layout_margin="10dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
